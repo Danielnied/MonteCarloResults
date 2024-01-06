@@ -1,0 +1,23 @@
+ID,type,input 1/kWh,input 2/kWh,output 1/kWh,output 2/kWh,capacity/kW,variable costs/CU,periodical costs/CU,investment/kW,max. invest./kW,constraints/CU
+ID_electricity_bus_shortage,source,0,0,12.77,0,0.93,1397.87,0,0,0,2208631.41
+ID_gas_bus_shortage,source,0,0,1.35,0,0.87,34.48,0,0,0,0.0
+ID_pv_bus_excess,sink,0.0,0,0.0,0,0.0,0.0,0,0,0,0.0
+ID_hp_electricity_bus_shortage,source,0,0,25.15,0,1.26,2019.58,0,0,0,4351269.44
+district_chp_electricity_bus_excess,sink,0.0,0,0.0,0,0.0,0.0,0,0,0,0.0
+district_gas_bus_shortage,source,0,0,0.0,0,0.0,0.0,0,0,0,0.0
+ID_electricity_sink,sink,12.77,0,0.0,0,0.93,0.0,0,0,0,0.0
+ID_heat_sink,sink,79.67,0,0.0,0,4.94,0.0,0,0,0,0.0
+ID_heat_sink_window-insulation,insulation,0,0,0.0,0,0.0,0.0,0.0,0.0,3.1,0.0
+ID_cooling_sink,sink,120.0,0,0.0,0,5.0,0.0,0,0,0,0.0
+ID_pv_to_ID_electricity_link,link,0.0,0,0.0,0,0.0,0.0,0.0,20.0,20,0.0
+ID_electricity_to_ID_hp_electricity_bus,link,0.0,0,0.0,0,0.0,0.0,0.0,20.0,20,0.0
+ID_battery_storage,storage,0.0,0,0.0,0,0.0,0.0,0.0,0.0,100,0.0
+ID_thermal_storage,storage,0.0,0,0.0,0,0.0,0.0,0.0,0.0,100,0.0
+ID_photovoltaic_electricity_source,source,0,0,0.0,0,0.0,0.0,0.0,0.0,20,0.0
+ID_solar_thermal_source,source,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,20,0.0
+ID_gasheating_transformer,transformer,1.35,0,1.15,0,0.74,0.0,51.86,0.74,20,83744.44
+ID_GCHP_transformer,transformer,18.19,60.34,78.53,0,4.2,0.0,485.21,4.2,20,0.0
+ID_ASCH_transformer,transformer,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,20,0.0
+ID_AbsCH_transformer,transformer,6.96,139.23,120.0,0,5.0,0.0,500.0,5.0,20,0.0
+ID_ASHP_transformer,transformer,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,20,0.0
+ID_chp_transformer,transformer,0.0,0,0.0,0.0,0.0,0.0,0.0,0.0,10000,0.0
