@@ -1,0 +1,181 @@
+digraph {
+	subgraph cluster_1 {
+		color=black
+		label=Legends
+		Bus [fixedsize=shape fontsize=10 height=0.7 shape=ellipse style="" width=1.1]
+		Sink [fixedsize=shape fontsize=10 height=0.7 shape=invtrapezium style="" width=1.1]
+		Source [fixedsize=shape fontsize=10 height=0.7 shape=trapezium style="" width=1.1]
+		"Transform-
+er" [fixedsize=shape fontsize=10 height=0.7 shape=rectangle style="" width=1.1]
+		Storage [fixedsize=shape fontsize=10 height=0.7 shape=rectangle style=dashed width=1.1]
+	}
+	"EFH_elect-
+ricity_bus" [fixedsize=shape fontsize=10 height=0.7 shape=ellipse style="" width=1.1]
+	"EFH_elect-
+ricity_bus-
+_shortage" [fixedsize=shape fontsize=10 height=0.7 shape=trapezium style="" width=1.1]
+	"EFH_heat_-
+bus" [fixedsize=shape fontsize=10 height=0.7 shape=ellipse style="" width=1.1]
+	"EFH_gas_b-
+us" [fixedsize=shape fontsize=10 height=0.7 shape=ellipse style="" width=1.1]
+	"EFH_gas_b-
+us_shortage" [fixedsize=shape fontsize=10 height=0.7 shape=trapezium style="" width=1.1]
+	EFH_pv_bus [fixedsize=shape fontsize=10 height=0.7 shape=ellipse style="" width=1.1]
+	"EFH_pv_bu-
+s_excess" [fixedsize=shape fontsize=10 height=0.7 shape=invtrapezium style="" width=1.1]
+	"EFH_hp_el-
+ectricity_-
+bus" [fixedsize=shape fontsize=10 height=0.7 shape=ellipse style="" width=1.1]
+	"EFH_hp_el-
+ectricity_-
+bus_shorta-
+ge" [fixedsize=shape fontsize=10 height=0.7 shape=trapezium style="" width=1.1]
+	"EFH_pv_to-
+_EFH_elect-
+ricity_link" [fixedsize=shape fontsize=10 height=0.7 shape=rectangle style="" width=1.1]
+	"EFH_elect-
+ricity_to_-
+EFH_hp_ele-
+ctricity_b-
+us" [fixedsize=shape fontsize=10 height=0.7 shape=rectangle style="" width=1.1]
+	"EFH_elect-
+ricity_sink" [fixedsize=shape fontsize=10 height=0.7 shape=invtrapezium style="" width=1.1]
+	"EFH_heat_-
+sink" [fixedsize=shape fontsize=10 height=0.7 shape=invtrapezium style="" width=1.1]
+	"EFH_batte-
+ry_storage" [fixedsize=shape fontsize=10 height=0.7 shape=rectangle style=dashed width=1.1]
+	"EFH_therm-
+al_storage" [fixedsize=shape fontsize=10 height=0.7 shape=rectangle style=dashed width=1.1]
+	"EFH_gashe-
+ating_tran-
+sformer" [fixedsize=shape fontsize=10 height=0.7 shape=rectangle style="" width=1.1]
+	"EFH_GCHP_-
+transforme-
+r_low_temp-
+_bus" [fixedsize=shape fontsize=10 height=0.7 shape=ellipse style="" width=1.1]
+	"EFH_GCHP_-
+transforme-
+r_low_temp-
+_ground_so-
+urce" [fixedsize=shape fontsize=10 height=0.7 shape=trapezium style="" width=1.1]
+	"EFH_GCHP_-
+transformer" [fixedsize=shape fontsize=10 height=0.7 shape=rectangle style="" width=1.1]
+	"EFH_ASHP_-
+transforme-
+r_low_temp-
+_bus" [fixedsize=shape fontsize=10 height=0.7 shape=ellipse style="" width=1.1]
+	"EFH_ASHP_-
+transforme-
+r_low_temp-
+_air_source" [fixedsize=shape fontsize=10 height=0.7 shape=trapezium style="" width=1.1]
+	"EFH_ASHP_-
+transformer" [fixedsize=shape fontsize=10 height=0.7 shape=rectangle style="" width=1.1]
+	"EFH_photo-
+voltaic_el-
+ectricity_-
+source" [fixedsize=shape fontsize=10 height=0.7 shape=trapezium style="" width=1.1]
+	"EFH_pv_to-
+_EFH_elect-
+ricity_link" -> "EFH_elect-
+ricity_bus"
+	"EFH_elect-
+ricity_bus-
+_shortage" -> "EFH_elect-
+ricity_bus"
+	"EFH_batte-
+ry_storage" -> "EFH_elect-
+ricity_bus"
+	"EFH_elect-
+ricity_bus" -> "EFH_elect-
+ricity_sink"
+	"EFH_elect-
+ricity_bus" -> "EFH_batte-
+ry_storage"
+	"EFH_elect-
+ricity_bus" -> "EFH_elect-
+ricity_to_-
+EFH_hp_ele-
+ctricity_b-
+us"
+	"EFH_GCHP_-
+transformer" -> "EFH_heat_-
+bus"
+	"EFH_gashe-
+ating_tran-
+sformer" -> "EFH_heat_-
+bus"
+	"EFH_ASHP_-
+transformer" -> "EFH_heat_-
+bus"
+	"EFH_therm-
+al_storage" -> "EFH_heat_-
+bus"
+	"EFH_heat_-
+bus" -> "EFH_heat_-
+sink"
+	"EFH_heat_-
+bus" -> "EFH_therm-
+al_storage"
+	"EFH_gas_b-
+us_shortage" -> "EFH_gas_b-
+us"
+	"EFH_gas_b-
+us" -> "EFH_gashe-
+ating_tran-
+sformer"
+	"EFH_photo-
+voltaic_el-
+ectricity_-
+source" -> EFH_pv_bus
+	EFH_pv_bus -> "EFH_pv_bu-
+s_excess"
+	EFH_pv_bus -> "EFH_pv_to-
+_EFH_elect-
+ricity_link"
+	"EFH_hp_el-
+ectricity_-
+bus_shorta-
+ge" -> "EFH_hp_el-
+ectricity_-
+bus"
+	"EFH_elect-
+ricity_to_-
+EFH_hp_ele-
+ctricity_b-
+us" -> "EFH_hp_el-
+ectricity_-
+bus"
+	"EFH_hp_el-
+ectricity_-
+bus" -> "EFH_GCHP_-
+transformer"
+	"EFH_hp_el-
+ectricity_-
+bus" -> "EFH_ASHP_-
+transformer"
+	"EFH_GCHP_-
+transforme-
+r_low_temp-
+_ground_so-
+urce" -> "EFH_GCHP_-
+transforme-
+r_low_temp-
+_bus"
+	"EFH_GCHP_-
+transforme-
+r_low_temp-
+_bus" -> "EFH_GCHP_-
+transformer"
+	"EFH_ASHP_-
+transforme-
+r_low_temp-
+_air_source" -> "EFH_ASHP_-
+transforme-
+r_low_temp-
+_bus"
+	"EFH_ASHP_-
+transforme-
+r_low_temp-
+_bus" -> "EFH_ASHP_-
+transformer"
+}
