@@ -1,0 +1,15 @@
+ID,type,input 1/kWh,input 2/kWh,output 1/kWh,output 2/kWh,capacity/kW,variable costs/CU,periodical costs/CU,investment/kW,max. invest./kW,constraints/CU
+EFH_electricity_bus_shortage,source,0,0,20.28,0,1.72,3508297.48,0,0,0,2220.44
+EFH_gas_bus_shortage,source,0,0,0.0,0,0.0,0.0,0,0,0,0.0
+EFH_pv_bus_excess,sink,0.0,0,0.0,0,0.0,0.0,0,0,0,0.0
+EFH_hp_electricity_bus_shortage,source,0,0,12.43,0,1.22,2149791.29,0,0,0,997.79
+EFH_electricity_sink,sink,13.02,0,0.0,0,0.95,0.0,0,0,0,0.0
+EFH_heat_sink,sink,84.99,0,0.0,0,5.27,0.0,0,0,0,0.0
+EFH_pv_to_EFH_electricity_link,link,0.0,0,0.0,0,0.0,0.0,0.0,20.0,20,0.0
+EFH_electricity_to_EFH_hp_electricity_bus,link,7.26,0,7.26,0,1.04,0.0,0.0,20.0,20,0.0
+EFH_battery_storage,storage,0.0,0,0.0,0,0.0,0.0,0.0,0.0,10,0.0
+EFH_thermal_storage,storage,0.0,0,0.0,0,0.0,0.0,0.0,0.0,20,0.0
+EFH_gasheating_transformer,transformer,0.0,0,0.0,0,0.0,0.0,0.0,20.0,20,1400.0
+EFH_GCHP_transformer,transformer,19.68,65.3,84.99,0,5.27,0.0,0.0,15.0,15,1733.55
+EFH_ASHP_transformer,transformer,0.0,0.0,0.0,0,0.0,0.0,0.0,20.0,20,2255.6
+EFH_photovoltaic_electricity_source,source,0,0,0.0,0,0.0,46.79,0.0,5.0,5,450.0
